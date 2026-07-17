@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Empleado registrado</title>
+</head>
+<body>
+    <h1>Empleado registrado con éxito</h1>
+    <ul>
+        <li><strong>Nombre:</strong> <span th:text="${empleadoDTO.nombre}"></span></li>
+        <li><strong>Apellido:</strong> <span th:text="${empleadoDTO.apellido}"></span></li>
+        <li><strong>Puesto:</strong> <span th:text="${empleadoDTO.puesto}"></span></li>
+        <li><strong>Edad:</strong> <span th:text="${empleadoDTO.edad}"></span></li>
+    </ul>
+    <p><a href="/empleados">Volver a la lista</a></p>
+</body>
+</html>

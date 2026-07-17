@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Empleado</title>
+</head>
+<body>
+    <h1>Registrar nuevo empleado</h1>
+    <form th:action="@{/empleados/nuevo}" th:object="${empleadoDTO}" method="post">
+        <label>Nombre:</label>
+        <input type="text" th:field="*{nombre}"><br><br>
+
+        <label>Apellido:</label>
+        <input type="text" th:field="*{apellido}"><br><br>
+
+        <label>Puesto:</label>
+        <input type="text" th:field="*{puesto}"><br><br>
+
+        <label>Edad:</label>
+        <input type="number" th:field="*{edad}"><br><br>
+
+        <button type="submit">Guardar</button>
+    </form>
+</body>
+</html>
