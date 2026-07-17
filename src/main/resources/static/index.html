@@ -2,16 +2,18 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Springboot Applications - Menu</title>
+    <title>Actividad 2 - Spring Boot</title>
 </head>
 <body>
-    <h1>Springboot Applications</h1>
-    <p>Selecciona un endpoint para ver su contenido:</p>
-
+    <h1>Actividad 2 - Menú de navegación</h1>
     <ul>
-        <li><a href="/Detalles_info">Endpoint 1 - Detalles_info (HTML)</a></li>
-        <li><a href="/Detalles_info2">Endpoint 2 - Detalles_info2 (JSON)</a></li>
-        <li><a href="/materias">Endpoint 3 - Materias (JSON)</a></li>
+        <li><a href="/empleados">Lista de empleados th:each</a></li>
+        <li><a href="/empleados/nuevo">Formulario nuevo empleado @ModelAttribute</a></li>
+        <li><a href="/empleados/buscar?puesto=Gerente">Buscar por puesto @RequestParam </a></li>
+        <li><a href="/empleados/1">Ver detalle de empleado id=1 @PathVariable</a></li>
+        <li><a href="/Detalles_info">Ejemplo Actividad  Model</a></li>
+        <li><a href="/api/Detalles_info2">Ejemplo Actividad  (REST/JSON)</a></li>
     </ul>
+    <p><code></code></p>
 </body>
 </html>
